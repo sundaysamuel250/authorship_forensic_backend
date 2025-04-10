@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'api',
+    'backend.api',
     'corsheaders',
     'rest_framework',
     'django.contrib.staticfiles',
@@ -57,6 +57,8 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',  # Frontend running on localhost (change this based on your setup)
 ]
+
+STATIC_ROOT =  BASE_DIR/'staticfiles'
 
 ROOT_URLCONF = 'backend.urls'
 
